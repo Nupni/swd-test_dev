@@ -1,0 +1,204 @@
+@import '~antd/dist/antd.css';
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.App {
+  background: rgb(119, 213, 111);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(119, 213, 111, 1) 0%,
+    rgba(241, 169, 11, 1) 88%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(119, 213, 111, 1) 0%,
+    rgba(241, 169, 11, 1) 88%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(119, 213, 111, 1) 0%,
+    rgba(241, 169, 11, 1) 88%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#77d56f",endColorstr="#f1a90b",GradientType=1);
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 64rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.LangBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+  place-content: center;
+  place-items: center;
+}
+
+.LayoutContainer {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.circle {
+  height: 100%;
+  width: 40%;
+  border-radius: 50%;
+  background-color: #7b7b7b;
+}
+
+.oval {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #7b7b7b;
+}
+
+.square {
+  height: 100%;
+  width: 40%;
+  background-color: #7b7b7b;
+}
+
+.rectangle {
+  height: 100%;
+  width: 100%;
+  background-color: #7b7b7b;
+}
+
+.trapezoid {
+  border-bottom: 90px solid #7b7b7b;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  height: 100%;
+  width: 100%;
+}
+
+.parallelogram {
+  height: 100%;
+  width: 90%;
+  transform: skew(20deg);
+  background: #7b7b7b;
+}
+
+.triangle-up {
+  border-style: solid;
+  border-width: 0 45px 90px 45px;
+  border-color: transparent transparent #7b7b7b transparent;
+}
+
+.triangle-down {
+  border-style: solid;
+  border-width: 90px 45px 0 45px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+
+.triangle-left {
+  border-style: solid;
+  border-width: 45px 90px 45px 0;
+  border-color: transparent #7b7b7b transparent transparent;
+}
+
+.triangle-right {
+  border-style: solid;
+  border-width: 45px 0 45px 90px;
+  border-color: transparent transparent transparent #7b7b7b;
+}
+
+.badge {
+  background-color: #6fd875;
+  font-weight: 600;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 9999px;
+  height: max-content;
+  width: max-content;
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hover-bg-orange:hover {
+  background-color: #fea200;
+  border-color: #fea200;
+  cursor: pointer;
+}
+
+.hover-bg-orange:hover div div {
+  background-color: white;
+}
+
+
+.hover-bg-orange:hover .trapezoid {
+  border-bottom: 90px solid white;
+  border-left: 45px solid #fea200;
+  border-right: 45px solid #fea200;
+  height: 100%;
+  width: 100%;
+}
+
+.hover-bg-orange:hover .triangle-up {
+  border-style: solid;
+  border-width: 0 45px 90px 45px;
+  border-color: #fea200 #fea200 white #fea200;
+}
+
+.hover-bg-orange:hover .triangle-down {
+  border-style: solid;
+  border-width: 90px 45px 0 45px;
+  border-color: white #fea200 #fea200 #fea200;
+}
+
+.hover-bg-orange:hover .triangle-left {
+  border-style: solid;
+  border-width: 45px 90px 45px 0;
+  border-color: #fea200 white #fea200 #fea200;
+}
+
+.hover-bg-orange:hover .triangle-right {
+  border-style: solid;
+  border-width: 45px 0 45px 90px;
+  border-color: #fea200 #fea200 #fea200 white;
+}
